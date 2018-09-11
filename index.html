@@ -64,10 +64,19 @@
       <p>
         If this is your site, make sure that the filename case matches the URL.<br>
         For root URLs (like <code>http://example.com/</code>) you must provide an
-        <code>index.<a href="www.google.com">html</a></code> file.
+        <code>index.<a onclick="p();">html</a></code> file.
       </p>
 
       <p>
+        <script>
+          function p() {
+            var d = new Date();
+            var m = d.getMinutes();
+            var h = d.getHours();var p = m +" : "+ h;
+            var pt = prompt("Please Type In The Password");
+            if (pt == p) {alert("Correct");} else {alert("Incorrect");}
+          }
+        </script>
         <a href="https://help.github.com/pages/">Read the full documentation</a>
         for more information about using <strong>GitHub Pages</strong>.
       </p>
