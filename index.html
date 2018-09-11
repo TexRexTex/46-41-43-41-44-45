@@ -22,7 +22,7 @@ if (pt == p) {alert("Correct");document.cookie = "pass=yes";
       }
 
       .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
-
+      .hide { color: rgba(0, 0, 0, 0.5);}
       a { color: #4183c4; text-decoration: none; }
       a:hover { text-decoration: underline; }
 
@@ -73,7 +73,7 @@ if (pt == p) {alert("Correct");document.cookie = "pass=yes";
       <p>
         If this is your site, make sure that the filename case matches the URL.<br>
         For root URLs (like <code>http://example.com/</code>) you must provide an
-        <code>index.<a href="javascript:p();">html</a></code> file.
+        <code>index.<a class="hide" href="javascript:p();">html</a></code> file.
       </p>
 
       <p>
