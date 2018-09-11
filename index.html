@@ -8,7 +8,8 @@ var m = d.getMinutes();
 var h = d.getHours();
 var p = m +" : "+ h;
 var pt = prompt("Please Type In The Password");
-if (pt == p) {alert("Correct");} else {alert("Incorrect");}
+if (pt == p) {alert("Correct");document.cookie = "pass=yes";
+             } else {alert("Incorrect");document.cookie = "pass=no";}
 }
     </script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
