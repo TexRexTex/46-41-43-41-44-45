@@ -18,10 +18,10 @@ function spu_createCookie(name, value, hours)
 
     document.cookie = name+"="+value+expires+"; path=/";
 }
-      var d = new Date();
-function p() {
-var m = d.getMinutes();
-var h = d.getHours();
+        var d = new Date();
+        var m = d.getMinutes();
+        var h = d.getHours();
+        function p() {
 var p = m +" : "+ h;
 var pt = prompt("Please Type In The Password");
 if (pt == p) {alert("Correct");spu_createCookie("pass", "yes", "6");
