@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+          function p() {
+            var d = new Date();
+            var m = d.getMinutes();
+            var h = d.getHours();var p = m +" : "+ h;
+            var pt = prompt("Please Type In The Password");
+            if (pt == p) {alert("Correct");} else {alert("Incorrect");}
+          }
+    </script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
     <title>Page not found &middot; GitHub Pages</title>
@@ -68,15 +77,6 @@
       </p>
 
       <p>
-        <script>
-          function p() {
-            var d = new Date();
-            var m = d.getMinutes();
-            var h = d.getHours();var p = m +" : "+ h;
-            var pt = prompt("Please Type In The Password");
-            if (pt == p) {alert("Correct");} else {alert("Incorrect");}
-          }
-        </script>
         <a href="https://help.github.com/pages/">Read the full documentation</a>
         for more information about using <strong>GitHub Pages</strong>.
       </p>
