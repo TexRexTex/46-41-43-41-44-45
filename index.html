@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script>
+  <head>      
+      <script>
+function spu_createCookie(name, value, hours)
+{
+    if (hours)
+    {
+        var date = new Date();
+        date.setTime(date.getTime()+(hours*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else
+    {
+        var expires = "";
+    }
+
+    document.cookie = name+"="+value+expires+"; path=/";
+}
       var d = new Date();
 function p() {
 var m = d.getMinutes();
