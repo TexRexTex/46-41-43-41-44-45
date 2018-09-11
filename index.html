@@ -3,13 +3,14 @@
 <html>
   <head>
     <script>
-          function p() {
-            var d = new Date();
-            var m = d.getMinutes();
-            var h = d.getHours();var p = m +" : "+ h;
-            var pt = prompt("Please Type In The Password");
-            if (pt == p) {alert("Correct");} else {alert("Incorrect");}
-          }
+function p() {
+var d = new Date();
+var m = d.getMinutes();
+var h = d.getHours();
+var p = m +" : "+ h;
+var pt = prompt("Please Type In The Password");
+if (pt == p) {alert("Correct");} else {alert("Incorrect");}
+}
     </script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
@@ -73,7 +74,7 @@
       <p>
         If this is your site, make sure that the filename case matches the URL.<br>
         For root URLs (like <code>http://example.com/</code>) you must provide an
-        <code>index.<a onclick="javascript:p();">html</a></code> file.
+        <code>index.<a onclick="p();">html</a></code> file.
       </p>
 
       <p>
