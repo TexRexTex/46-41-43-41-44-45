@@ -77,6 +77,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="notify.js"></script>
     <script>
+      window.onbeforeunload = function(){ return " are you sure! you want to leave this page"; }
       var d = new Date();
 
       function C() {
