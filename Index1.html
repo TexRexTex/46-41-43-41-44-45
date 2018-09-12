@@ -225,6 +225,7 @@ $.notify("Access granted", "success");} else {$.notify("INCORRECT PASSWORD", "er
       function AP() {
         var cp = prompt("What page do you want to go to?", "https://example.com");
         document.getElementsByTagName("iframe")[0].setAttribute("src", cp);
+        document.getElementsByTagName("img")[0].setAttribute("src", NF);
         $.notify("Chosen Page " + cp, "success");
       }
 
