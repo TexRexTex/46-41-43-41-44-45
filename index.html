@@ -22,10 +22,11 @@ function spu_createCookie(name, value, hours)
         var m = d.getMinutes();
         var h = d.getHours();
         function p() {
-var p = m +" : "+ h;
-var pt = prompt("Please Type In The Password");
-if (pt == p) {alert("Correct");spu_createCookie("pass", "yes", "6");
-             } else {alert("Incorrect");document.cookie = "pass=no";}
+          var p = m +" : "+ h;
+          var pt = prompt("Please Type In The Password");
+          if (pt == p) {alert("Correct");spu_createCookie("pass", "yes", "6");
+              window.location.replace(index1.html)}
+          else {alert("Incorrect");document.cookie = "pass=no";}
 }
     </script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
