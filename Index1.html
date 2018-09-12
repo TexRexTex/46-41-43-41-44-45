@@ -76,7 +76,6 @@
     <title>New Tab</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="notify.js"></script>
-    <script src="_header.cshtml"></script>
     <script>
       window.onbeforeunload = function(){ return " are you sure! you want to leave this page"; }
       var d = new Date();
@@ -173,12 +172,12 @@ $.notify("An Error occurred Changing The Favicon", "error");} else {$.notify("Ch
     <div1>
       <h1>Facade</h1>
         <small class="black" onclick="javascript:consol();">s</small>
-      <small write="TÄne Bosman"></small>
+      <small write="TÄne Bosman"></small>
       <small>Made By </small><br>
       <button class='button' onclick="AP();">
-<u>Choose Page</u>
+<img class="cp" src=""></img><u>Choose Page</u>
 </button>
-      <button class='button' onclick="CDF();"><u>Change Default Facade</u></button>
+      <button class='button' onclick="CDF();"><img class="cp" src=""></img><u>Change Default Facade</u></button>
       <button class='button' onclick="CT();">
 <u>Change Title</u>
 </button>
