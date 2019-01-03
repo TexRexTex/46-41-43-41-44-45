@@ -24,7 +24,9 @@ function spu_createCookie(name, value, hours)
         function p() {
           var p = m +" : "+ h;
           var pt = prompt("Please Type In The Password");
-          if (pt == p) {alert("Correct");spu_createCookie("pass", "yes", "6");
+          if (pt == p) {alert("Correct");
+                        
+                        spu_createCookie("pass", "yes", "6");
               window.location.replace("Index1.html");}
           else {alert("Incorrect");}
 }
