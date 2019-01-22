@@ -3,22 +3,6 @@
   <head>
     <script src="jquery-3.3.1.min.js"></script>
       <script>
-function spu_createCookie(name, value, hours)
-{
-  document.cookie="pass=;expires=Wed; 01 Jan 1970"
-    if (hours)
-    {
-        var date = new Date();
-        date.setTime(date.getTime()+(hours*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
-    }
-    else
-    {
-        var expires = "";
-    }
-
-    document.cookie = name+"="+value+expires+"; path=/";
-}
         var d = new Date();
         var m = d.getMinutes();
         var h = d.getHours();
@@ -26,10 +10,9 @@ function spu_createCookie(name, value, hours)
           var p = m +" : "+ h;
           var pt = prompt("Please Type In The Password");
           if (pt == p) {alert("Correct");
-                        
-                        spu_createCookie("pass", "yes", "6");
+              localStorage.setItem("pass", "yes");                        
               window.location.replace("Index1.html");}
-          else {alert("Incorrect");}
+          else {alert("Incorrect");localStorage.setItem("pass", "no");}
 }
     </script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
