@@ -60,6 +60,7 @@ h1 {
 }
 
 body {
+  display: inline-block
   color: blue;
   background-color: black;
 }
