@@ -2,8 +2,11 @@
   color: black;
 }
 
+h1 {
+    margin: 0;
+}
 #main {
-  display: inline;
+  display: inline-block;
   width: 800px;
 }
 
