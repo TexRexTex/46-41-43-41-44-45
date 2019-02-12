@@ -17,6 +17,7 @@ if (ls == "no") {
 window.onbeforeunload = function() {
   return " are you sure! you want to leave this page";
 }
+setTimeout(function(){
 //checking for default facade
 var d = localStorage.getItem("defaultFacade");
 if (d == null) {
@@ -38,6 +39,7 @@ var NF = "https://www.google.com/s2/favicons?domain=" + NF;
   link.href = NF;
   document.getElementsByTagName('head')[0].appendChild(link);
 })();
+  }, 3000);
 //button changing title/favicon
 function CT() {
   var t = prompt("Title");
