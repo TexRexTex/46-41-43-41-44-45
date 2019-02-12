@@ -46,7 +46,7 @@ setTimeout(function() {
     link.href = NF;
     document.getElementsByTagName('head')[0].appendChild(link);
   })();
-}, 3000);
+}, 300);
 //button changing title/favicon
 function CT() {
   var t = prompt("Title");
