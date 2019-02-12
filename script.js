@@ -1,4 +1,4 @@
-function delacces {
+function delacces() {
   
 }
 var ls = localStorage.getItem("pass");
