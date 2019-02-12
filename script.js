@@ -1,4 +1,6 @@
-
+function delacces {
+  
+}
 var ls = localStorage.getItem("pass");
 if (ls == null) {
   window.location.replace("/46-41-43-41-44-45/");
