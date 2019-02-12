@@ -1,3 +1,9 @@
+document.onkeydown = function(e) { 
+  if (e.ctrlKey && e.which == 70) {
+    showfacade();
+  } 
+
+
 function delacces() {
   var ls = localStorage.getItem("pass");
   localStorage.removeItem("pass");
