@@ -1,3 +1,10 @@
+document.onkeydown = function(e) {
+  if (e.ctrlKey && e.which == 70) {
+    includeHTML();
+  }
+};
+
+
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
