@@ -1,6 +1,3 @@
-
-
-
 function delacces() {
   var ls = localStorage.getItem("pass");
   localStorage.removeItem("pass");
