@@ -22,7 +22,7 @@ setTimeout(function() {
   //checking for default facade
   var d = localStorage.getItem("defaultFacade");
   if (d == null) {
-    var DF = prompt("DEFAULT FACADE\n1=classrooms\n2=MathsWhizz\n3=Google\n4=sketchnation\n5=newtab", "");
+    var DF = prompt("DEFAULT FACADE\n0=classrooms\n1=MathsWhizz\n2=Google\n3=sketchnation\n4=newtab", "");
     localStorage.setItem("defaultFacade", DF);
     $.notify("Changed Default Facade", "success");
   }
