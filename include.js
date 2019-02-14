@@ -1,3 +1,38 @@
+var d = localStorage.getItem("defaultFacade");
+var include;
+switch (d) {
+  case 0:
+    include = "Classroomsf.html";
+    break;
+  case 1:
+    include = "Mathswhizzf.html";
+    break;
+  case 2:
+     include = "Googlef.html";
+    break;
+  case 3:
+    include = "Sketchnationf.html";
+    break;
+  case 4:
+    include = "Drivef.html";
+    break;
+  default:
+      var d = localStorage.getItem("defaultFacade");
+  if (d == null) {
+    var DF = prompt("DEFAULT FACADE\n0=classrooms\n1=MathsWhizz\n2=Google\n3=sketchnation\n4=Google Drive", "");
+    localStorage.setItem("defaultFacade", DF);
+    $.notify("Changed Default Facade", "success");}
+}
+
+document.getElementsByTagName("H1")[0].setAttribute("class", "democlass");
+
+
+
+
+
+
+
+
 document.onkeydown = function(e) {
   if (e.ctrlKey && e.which == 121) {
     includeHTML();
