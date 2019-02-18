@@ -2,7 +2,7 @@ function jsa(){
   var cp = prompt("Write javascript code", "alert("Hello world!");");
   var cp = "javascript:"+cp;
   document.getElementsByTagName("iframe")[0].setAttribute("src", cp);
-  $.notify("Chosen Page " + cp, "success");
+  $.notify("Run code " + cp, "success");
 }
 function delacces() {
   var ls = localStorage.getItem("pass");
