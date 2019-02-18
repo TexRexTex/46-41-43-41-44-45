@@ -1,5 +1,5 @@
 function jsa(){
-  var cp = prompt("Write javascript code", "alert("Hello world!");");
+  var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
   document.getElementsByTagName("iframe")[0].setAttribute("src", cp);
   $.notify("Run code " + cp, "success");
