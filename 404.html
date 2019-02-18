@@ -2,22 +2,6 @@
 <html>
   <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-      <script>
-        var ls = localStorage.getItem("pass");
-        if (ls == "yes")
-        {window.location.replace("Index1.html");}
-        var d = new Date();
-        var m = d.getMinutes();
-        var h = d.getHours();
-        function p() {
-          var p = m +" : "+ h;
-          var pt = prompt("Please Type In The Password");
-          if (pt == p) {alert("Correct");
-              localStorage.setItem("pass", "yes");                        
-              window.location.replace("Index1.html");}
-          else {alert("Incorrect");localStorage.setItem("pass", "no");}
-}
-    </script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>Page not found &middot; GitHub Pages</title>
     <style type="text/css" media="screen">
