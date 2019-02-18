@@ -38,6 +38,9 @@ setTimeout(function() {
   }
   //Change Title
   var t = prompt("Title");
+  if (t =! null) {
+  var t = "New Tab";  
+  }
   document.title = t;
   console.log(t);
   //Change favicon
