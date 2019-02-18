@@ -5,6 +5,10 @@ function jsa(){
   document.getElementsByTagName("iframe")[0].setAttribute("src", cp);
   $.notify("Run code " + cp, "success");
 }
+}
+catch(err) {
+  alert(err.message);
+}
 function delacces() {
   var ls = localStorage.getItem("pass");
   localStorage.removeItem("pass");
@@ -94,8 +98,4 @@ function AP() {
   var ss = "https://www.google.com/s2/favicons?domain=" + cp;
   document.getElementsByTagName("img")[0].setAttribute("src", ss);
   $.notify("Chosen Page " + cp, "success");
-}
-}
-catch(err) {
-  alert(err.message);
 }
