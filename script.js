@@ -1,3 +1,4 @@
+try {
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
@@ -93,4 +94,8 @@ function AP() {
   var ss = "https://www.google.com/s2/favicons?domain=" + cp;
   document.getElementsByTagName("img")[0].setAttribute("src", ss);
   $.notify("Chosen Page " + cp, "success");
+}
+}
+catch(err) {
+  alert(err.message);
 }
