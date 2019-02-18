@@ -4,10 +4,6 @@ function jsa(){
   document.getElementsByTagName("iframe")[0].setAttribute("src", cp);
   $.notify("Run code " + cp, "success");
 }
-window.onerror = function(msg, url, linenumber) {
-    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
-    return true;
-}
 function delacces() {
   var ls = localStorage.getItem("pass");
   localStorage.removeItem("pass");
@@ -101,3 +97,9 @@ function AP() {
   document.getElementsByTagName("img")[0].setAttribute("src", ss);
   $.notify("Chosen Page " + cp, "success");
 }
+function er() {window.onerror = function(msg, url, linenumber) {
+    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+    return true;
+}
+}
+er();
