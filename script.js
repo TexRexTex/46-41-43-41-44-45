@@ -97,9 +97,3 @@ function AP() {
   document.getElementsByTagName("img")[0].setAttribute("src", ss);
   $.notify("Chosen Page " + cp, "success");
 }
-function er() {window.onerror = function(msg, url, linenumber) {
-    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
-    return true;
-}
-}
-er();
