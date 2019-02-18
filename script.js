@@ -1,13 +1,12 @@
-try {
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
   document.getElementsByTagName("iframe")[0].setAttribute("src", cp);
   $.notify("Run code " + cp, "success");
 }
-}
-catch(err) {
-  alert(err.message);
+window.onerror = function(msg, url, linenumber) {
+    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+    return true;
 }
 function delacces() {
   var ls = localStorage.getItem("pass");
