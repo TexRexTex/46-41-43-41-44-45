@@ -15,6 +15,10 @@
     <script src="include.js">
     </script>
     <script src="error.js">
+      window.onerror = function(msg, url, linenumber) {
+    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+    return true;
+}
     </script>
     <script src="script.js">
     </script>
