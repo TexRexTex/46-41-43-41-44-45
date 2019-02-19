@@ -1,4 +1,4 @@
-object.addEventListener("error", myScript);
+object.addEventListener("error", s);
 
 
 function s() {
