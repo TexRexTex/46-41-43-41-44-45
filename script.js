@@ -1,4 +1,4 @@
-function CTH() {}
+function CTH() {document.getElementById("Style")[0].setAttribute("href", "WhiteBlue.css");}
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
