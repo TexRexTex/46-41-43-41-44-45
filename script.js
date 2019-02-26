@@ -58,11 +58,9 @@ setTimeout(function() {
 //button changing title/favicon
 function CT() {
   var t = prompt("Title");
-  if (t =! null) {
   document.title = t;
   document.getElementsByTagName("button")[0].setAttribute("title", t);
   console.log(t);
-  }
   var NF = prompt("link for page favicon =", "");
   if (NF =! null) {
   var NF = "https://www.google.com/s2/favicons?domain=" + NF;
