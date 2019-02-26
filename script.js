@@ -44,6 +44,7 @@ setTimeout(function() {
   console.log(t);
   //Change favicon
   var NF = prompt("link for page favicon =", "");
+  if (NF =! null) {
   var NF = "https://www.google.com/s2/favicons?domain=" + NF;
   (function() {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
@@ -51,15 +52,18 @@ setTimeout(function() {
     link.rel = 'shortcut icon';
     link.href = NF;
     document.getElementsByTagName('head')[0].appendChild(link);
-  })();
+  })();}
 }, 1000);
 //button changing title/favicon
 function CT() {
   var t = prompt("Title");
+  if (t =! null) {
   document.title = t;
   document.getElementsByTagName("button")[0].setAttribute("title", t);
   console.log(t);
+  }
   var NF = prompt("link for page favicon =", "");
+  if (NF =! null) {
   var NF = "https://www.google.com/s2/favicons?domain=" + NF;
   (function() {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
@@ -67,7 +71,7 @@ function CT() {
     link.rel = 'shortcut icon';
     link.href = NF;
     document.getElementsByTagName('head')[0].appendChild(link);
-  })();
+  })();}
   if (t == null) {
     $.notify("An Error occurred Changing The Title", "error");
   } else {
