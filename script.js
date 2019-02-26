@@ -38,7 +38,7 @@ setTimeout(function() {
   }
   //Change Title
   var t = prompt("Title");
-  if (t =! null) {
+  if (t ==! null) {
   var t = "New Tab";  
   }
   document.title = t;
