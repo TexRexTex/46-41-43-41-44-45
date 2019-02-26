@@ -1,3 +1,4 @@
+function CTH() {}
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
