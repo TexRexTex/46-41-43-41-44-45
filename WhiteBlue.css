@@ -27,7 +27,7 @@ h1 {
 	border:1px solid #dcdcdc;
 	display:inline-block;
 	cursor:pointer;
-	color:#14396a;
+	color:aqua;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
@@ -52,24 +52,21 @@ h1 {
 
 body {
   display: inline-block
-  color: blue;
+  color: AQUA;
   background-color: White;
 }
 
 div1 {
-  color: blue;
+  color: AQUA;
 }
 
 button {
-  color: blue;
+  color: AQUA;
 }
+
 
 a {
   cursor: auto;
-  color: blue;
-}
-
-a {
-  color: blue;
+  color: AQUA;
   text-decoration: none;
 }
