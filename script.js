@@ -1,4 +1,4 @@
-function CTH() {    document.getElementById("Style").href="WhiteBlue.css";}
+function CTH() {    document.getElementById("Style").href="/WhiteBlue.css";}
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
