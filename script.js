@@ -1,5 +1,5 @@
 function CTH() {    var popup = document.getElementById("myPopup"); popup.classList.toggle("show"); }
-
+function theme() {/*https://stackoverflow.com/questions/15281197/javascript-run-a-script-depending-on-which-button-is-clicked*/}
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
