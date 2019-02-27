@@ -1,5 +1,5 @@
 function CTH() {    var popup = document.getElementById("myPopup"); popup.classList.toggle("show"); }
-//document.getElementById("Style").href="purple.css";
+
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
