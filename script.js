@@ -3,9 +3,9 @@ function theme(buttonElement) {
   alert(buttonElement.id);
   var buttonClickedId = buttonElement.id;
   if( buttonClickedId === 'btn1' ){
-    // do btn1 stuff
+      document.document.getElementById("Style")[0].setAttribute("href", "BlackBlue.css");
   } else if( buttonClickedId === 'btn2' ){
-     // do btn2 stuff
+     document.document.getElementById("Style")[0].setAttribute("href", "purple.css");
   }
  
 }
