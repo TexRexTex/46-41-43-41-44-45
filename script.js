@@ -1,5 +1,14 @@
 function CTH() {    var popup = document.getElementById("myPopup"); popup.classList.toggle("show"); }
-function theme() {/*https://stackoverflow.com/questions/15281197/javascript-run-a-script-depending-on-which-button-is-clicked*/}
+function theme(buttonElement) {
+  alert(buttonElement.id);
+  var buttonClickedId = buttonElement.id;
+  if( buttonClickedId === 'btn1' ){
+    // do btn1 stuff
+  } else if( buttonClickedId === 'btn2' ){
+     // do btn2 stuff
+  }
+ 
+}
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
