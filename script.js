@@ -6,7 +6,7 @@ function theme(buttonElement) {
   } else if( buttonClickedId === 'btn2' ){
      var css = "purple.css"
   }
- 
+   document.getelementbyid("Style")[0].setAttribute("href", css);
 }
 function jsa(){
   var cp = prompt("Write javascript code");
