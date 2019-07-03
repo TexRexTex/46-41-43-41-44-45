@@ -24,15 +24,6 @@ switch (d) {
     $.notify("Changed Default Facade", "success");}
 }
 
-document.getElementsByTagName("h1").setAttribute("class", "democlass");
-
-
-
-
-
-
-
-
 document.onkeydown = function(e) {
   if (e.ctrlKey && e.which == 121) {
     includeHTML();
