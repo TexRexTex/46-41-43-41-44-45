@@ -2,13 +2,7 @@
   color: black;
   cursor: default;
 }
-h1 {
-    margin: 0;
-}
 
-.right {
-    float: right;
-}
 .button {
   border: 1px solid #0a3c59;
   background: #3e779d;
@@ -18,20 +12,13 @@ h1 {
   background: -ms-linear-gradient(top, #65a9d7, #3e779d);
   background: -o-linear-gradient(top, #65a9d7, #3e779d);
   background-image: -ms-linear-gradient(top, #65a9d7 0%, #3e779d 100%);
-  padding: 10.5px 21px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
-  border-radius: 6px;
   -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
   text-shadow: #7ea4bd 0 1px 0;
   color: #06426c;
-  cursor: pointer;
-  font-size: 14px;
-  font-family: helvetica, serif;
-  text-decoration: none;
-  vertical-align: middle;
 }
 
 .button:hover {
@@ -61,16 +48,11 @@ h1 {
 }
 
 body {
-  display: inline-block;
   color: blue;
   background-color: black;
 }
 
 div1 {
-  color: blue;
-}
-
-button {
   color: blue;
 }
 
