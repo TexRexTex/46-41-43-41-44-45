@@ -25,7 +25,7 @@ switch (d) {
 }
 
 document.onkeydown = function(e) {
-  if (e.ctrlKey && e.which == 121) {
+  if (e.ctrlKey && e.shiftKey && e.which == 121) {
     includeHTML();
   }
 };
