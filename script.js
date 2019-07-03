@@ -12,7 +12,7 @@ function theme(buttonElement) {
 function jsa(){
   var cp = prompt("Write javascript code");
   var cp = "javascript:"+cp;
-  document.getElementsByTagName("iframe")[0].setAttribute("src", cp);
+  eval(cp);
   $.notify("Run code " + cp, "success");
 }
 function DF() {var DF = prompt("DEFAULT FACADE\n0=classrooms\n1=MathsWhizz\n2=Google\n3=sketchnation\n4=Google Drive", "");
