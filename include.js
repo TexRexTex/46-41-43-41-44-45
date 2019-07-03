@@ -1,20 +1,22 @@
+getinclude();
+function getinclude(){
 var d = localStorage.getItem("defaultFacade");
 var include;
 switch (d) {
   case 0:
-    include = "Classroomsf.html";
+    var include = "Classroomsf.html";
     break;
   case 1:
-    include = "Mathswhizzf.html";
+    var include = "Mathswhizzf.html";
     break;
   case 2:
-     include = "Googlef.html";
+     var include = "Googlef.html";
     break;
   case 3:
-    include = "Sketchnationf.html";
+    var include = "Sketchnationf.html";
     break;
   case 4:
-    include = "Drivef.html";
+    var include = "Drivef.html";
     break;
   default:
       var d = localStorage.getItem("defaultFacade");
@@ -25,6 +27,9 @@ switch (d) {
     document.getElementById("include").src=include;
 }
 document.getElementById("include").src=include;
+}
+
+
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
