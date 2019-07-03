@@ -21,7 +21,13 @@
     </script>
     <script src="script.js">
     </script>
-
+    <script>
+      document.onkeydown = function(e) {
+  if (e.ctrlKey && e.shiftKey && e.which == 121) {
+    includeHTML();
+  }
+}
+      </script>
 
     <!-- Meta -->
     <meta charset=utf-8>
