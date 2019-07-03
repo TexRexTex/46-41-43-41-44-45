@@ -22,6 +22,7 @@ switch (d) {
     var DF = prompt("DEFAULT FACADE\n0=classrooms\n1=MathsWhizz\n2=Google\n3=sketchnation\n4=Google Drive", "");
     localStorage.setItem("defaultFacade", DF);
     $.notify("Changed Default Facade", "success");}
+    document.getElementById("include").src=include;
 }
 document.getElementById("include").src=include;
 function includeHTML() {
