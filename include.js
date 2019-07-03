@@ -24,7 +24,7 @@ switch (d) {
     $.notify("Changed Default Facade", "success");}
 }
 
-document.getElementsByTagName("H1")[0].setAttribute("class", "democlass");
+document.getElementsByTagName("h1").setAttribute("class", "democlass");
 
 
 
