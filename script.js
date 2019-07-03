@@ -11,7 +11,6 @@ function theme(buttonElement) {
 }
 function jsa(){
   var cp = prompt("Write javascript code");
-  var cp = "javascript:"+cp;
   eval(cp);
   $.notify("Run code " + cp, "success");
 }
