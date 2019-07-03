@@ -23,7 +23,7 @@ switch (d) {
     localStorage.setItem("defaultFacade", DF);
     $.notify("Changed Default Facade", "success");}
 }
-
+document.getElementById("include").src=include;
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
