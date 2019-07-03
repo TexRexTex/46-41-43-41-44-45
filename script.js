@@ -22,6 +22,7 @@ function delacces() {
   localStorage.removeItem("pass");
   localStorage.removeItem("defaultFacade");
   window.location.replace("/46-41-43-41-44-45/");
+  getinclude();
 }
 var ls = localStorage.getItem("pass");
 if (ls == null) {
@@ -44,6 +45,7 @@ setTimeout(function() {
     var DF = prompt("DEFAULT FACADE\n0=classrooms\n1=MathsWhizz\n2=Google\n3=sketchnation\n4=Google Drive", "");
     localStorage.setItem("defaultFacade", DF);
     $.notify("Changed Default Facade", "success");
+    getinclude();
   }
   //Change Title
   var t = prompt("Title");
