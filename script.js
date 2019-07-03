@@ -1,10 +1,11 @@
+var css;
 function CTH() {    var popup = document.getElementById("myPopup"); popup.classList.toggle("show"); }
 function theme(buttonElement) {
   var buttonClickedId = buttonElement.id;
   if( buttonClickedId === 'btn1' ){
-      var css = "BlackBlue.css"
+      var css = "BlackBlue.css";
   } else if( buttonClickedId === 'btn2' ){
-     var css = "purple.css"
+     var css = "purple.css";
   }
    document.getElementById("Style").setAttribute("href", css);
 }
