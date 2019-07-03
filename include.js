@@ -24,13 +24,6 @@ switch (d) {
     $.notify("Changed Default Facade", "success");}
 }
 
-document.onkeydown = function(e) {
-  if (e.ctrlKey && e.shiftKey && e.which == 121) {
-    includeHTML();
-  }
-};
-
-
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
