@@ -61,7 +61,7 @@ h1 {
 }
 
 body {
-  display: inline-block
+  display: inline-block;
   color: blue;
   background-color: black;
 }
@@ -76,10 +76,6 @@ button {
 
 a {
   cursor: auto;
-  color: blue;
-}
-
-a {
   color: blue;
   text-decoration: none;
 }
