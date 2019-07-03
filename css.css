@@ -145,3 +145,8 @@ h1 {
 .right {
     float: right;
 }
+
+iframe{
+	width:100%;
+	height:1000px;
+}
