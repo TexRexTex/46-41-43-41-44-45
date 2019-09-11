@@ -1,4 +1,3 @@
-getinclude();
 function getinclude(){
 var d = localStorage.getItem("defaultFacade");
 var include;
@@ -61,3 +60,4 @@ function includeHTML() {
     }
   }
 };
+getinclude();
