@@ -1,8 +1,8 @@
 getinclude();
-console.log(d);
 function getinclude(){
 var d = localStorage.getItem("defaultFacade");
 var include;
+console.log(d);
 switch (d) {
   case 0:
     var include = "Classroomsf.html";
