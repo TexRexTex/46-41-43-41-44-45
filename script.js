@@ -1,6 +1,7 @@
-var css = localStorage.getItem("css");
-
-window.onload= document.getElementById("Style").setAttribute("href", css);
+function loadCSS() {
+  var css = localStorage.getItem("css");
+  document.getElementById("Style").setAttribute("href", css);
+}
 
 function CTH() {
   var popup = document.getElementById("myPopup");
