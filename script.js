@@ -1,4 +1,5 @@
-var css;
+var css = localStorage.getItem("css");
+document.getElementById("Style").setAttribute("href", css);
 function CTH() {    var popup = document.getElementById("myPopup"); popup.classList.toggle("show"); }
 function theme(buttonElement) {
   var buttonClickedId = buttonElement.id;
@@ -7,7 +8,8 @@ function theme(buttonElement) {
   } else if( buttonClickedId === 'btn2' ){
      var css = "purple.css";
   }
-   document.getElementById("Style").setAttribute("href", css);
+  localStorage.setItem("css", css);
+  document.getElementById("Style").setAttribute("href", css);
 }
 function jsa(){
   var cp = prompt("Write javascript code");
