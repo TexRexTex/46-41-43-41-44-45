@@ -16,7 +16,7 @@ function jsa(){
 }
 function DF() {var DF = prompt("DEFAULT FACADE\n0=classrooms\n1=MathsWhizz\n2=Google\n3=sketchnation\n4=Google Drive", "");
     localStorage.setItem("defaultFacade", DF);
-    $.notify("Changed Default Facade", "success");}
+    $.notify("Changed Default Facade To "+d, "success");}
 function delacces() {
   var ls = localStorage.getItem("pass");
   localStorage.removeItem("pass");
