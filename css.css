@@ -136,7 +136,7 @@ iframe{
 }
 .button{
 	padding: 10.5px 21px !important;
-	text-decoration: none;
+	text-decoration: underline;
 	vertical-align: middle;
 	font-size: 14px;
 	-moz-border-radius:6px;
