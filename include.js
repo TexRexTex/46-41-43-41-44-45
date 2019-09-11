@@ -4,6 +4,9 @@ var d = localStorage.getItem("defaultFacade");
 var include;
 console.log(d);
 switch (d) {
+  case "null":
+      var include = "Googlef.html";
+    break;
   case 0:
     var include = "Classroomsf.html";
     break;
