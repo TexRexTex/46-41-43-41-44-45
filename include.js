@@ -1,4 +1,5 @@
 getinclude();
+console.log(d);
 function getinclude(){
 var d = localStorage.getItem("defaultFacade");
 var include;
