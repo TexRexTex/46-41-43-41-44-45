@@ -1,24 +1,35 @@
 var css = localStorage.getItem("css");
 document.getElementById("Style").setAttribute("href", css);
-function CTH() {    var popup = document.getElementById("myPopup"); popup.classList.toggle("show"); }
+
+function CTH() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
 function theme(buttonElement) {
+	var css;
   var buttonClickedId = buttonElement.id;
-  if( buttonClickedId === 'btn1' ){
-      var css = "BlackBlue.css";
-  } else if( buttonClickedId === 'btn2' ){
-     var css = "purple.css";
+  if (buttonClickedId === 'btn1') {
+    var css = "BlackBlue.css";
+  } else if (buttonClickedId === 'btn2') {
+    var css = "purple.css";
   }
   localStorage.setItem("css", css);
   document.getElementById("Style").setAttribute("href", css);
 }
-function jsa(){
+
+function jsa() {
   var cp = prompt("Write javascript code");
   eval(cp);
   $.notify("Run code " + cp, "success");
 }
-function DF() {var DF = prompt("DEFAULT FACADE\n0=classrooms\n1=MathsWhizz\n2=Google\n3=sketchnation\n4=Google Drive", "");
-    localStorage.setItem("defaultFacade", DF);
-    $.notify("Changed Default Facade To "+localStorage.getItem("defaultFacade"), "success");}
+
+function DF() {
+  var DF = prompt("DEFAULT FACADE\n0=classrooms\n1=MathsWhizz\n2=Google\n3=sketchnation\n4=Google Drive", "");
+  localStorage.setItem("defaultFacade", DF);
+  $.notify("Changed Default Facade To " + localStorage.getItem("defaultFacade"), "success");
+}
+
 function delacces() {
   var ls = localStorage.getItem("pass");
   localStorage.removeItem("pass");
@@ -51,8 +62,8 @@ setTimeout(function() {
   }
   //Change Title
   var t = prompt("Title");
-  if (t ==! null) {
-  var t = "New Tab";  
+  if (t != null) {
+    var t = "New Tab";
   }
   document.title = t;
   console.log(t);
