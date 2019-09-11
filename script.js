@@ -1,6 +1,5 @@
 function loadCSS() {
-  var css = localStorage.getItem("css");
-  document.getElementById("Style").setAttribute("href", css);
+  window.onload= document.getElementById("Style").setAttribute("href", localStorage.getItem("css"));
 }
 
 function CTH() {
