@@ -1,5 +1,10 @@
 function loadCSS() {
-  window.onload= document.getElementById("Style").setAttribute("href", localStorage.getItem("css"));
+  var css=localStorage.getItem("css");
+  if(css==null){
+    localStorage.setItem("css", BlackBlue.css);
+    css=localStorage.getItem("css");
+  }
+  window.onload= document.getElementById("Style").setAttribute("href", css);
 }
 
 function CTH() {
