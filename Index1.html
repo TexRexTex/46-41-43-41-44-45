@@ -101,7 +101,7 @@
       <button class="purple" onclick="theme(this)" id="btn2">Purple</button>
       </div>
       </div>
-      <button class='button' onclick="var vidurl = prompt('Video Url');vidurl='http://youlink.epizy.com/?url='+vidurl;console.log(vidurl);">Youtube Video</button>
+      <button class='button' onclick="var vidurl = prompt('Video Url');vidurl='http://youlink.epizy.com/?url='+vidurl;$.getJSON(vidurl, function(data) {console.log(data);});">Youtube Video</button>
     <iframe id="frame">
       <p>
         Sorry something went wrong.
