@@ -1,7 +1,7 @@
 function loadCSS() {
   var css=localStorage.getItem("css");
   if(css==null){
-    localStorage.setItem("css", BlackBlue.css);
+    localStorage.setItem("css", "BlackBlue.css");
     css=localStorage.getItem("css");
   }
   window.onload= document.getElementById("Style").setAttribute("href", css);
@@ -13,7 +13,7 @@ function CTH() {
 }
 
 function theme(buttonElement) {
-	var css;
+  var css;
   var buttonClickedId = buttonElement.id;
   if (buttonClickedId === 'btn1') {
     var css = "BlackBlue.css";
@@ -126,7 +126,7 @@ function consol() {
 //changing the page you want to go to
 function AP() {
   var cp = prompt("What page do you want to go to?", "https://example.com");
-  document.getElementsByTagName("iframe")[0].setAttribute("src", cp);
+  xhttpGet(cp,"iframe")
   var ss = "https://www.google.com/s2/favicons?domain=" + cp;
   document.getElementsByTagName("img")[0].setAttribute("src", ss);
   $.notify("Chosen Page " + cp, "success");
