@@ -43,7 +43,7 @@ function xhttpGet(url, REPLACEMENTID) {
       if (REPLACEMENTID) {
         document.getElementById(REPLACEMENTID).innerHTML = xhttp.responseText;
       } else {
-        document.body.innerHTML = xhttp.responseText;
+        document.body.innerHTML = "<base href="+url+" target='_blank'>"+xhttp.responseText;
       }
     }
   };
