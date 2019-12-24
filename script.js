@@ -126,7 +126,7 @@ function consol() {
 //changing the page you want to go to
 function AP() {
   var cp = prompt("What page do you want to go to?", "https://example.com");
-  xhttpGet(cp,"iframe")
+  xhttpGet(cp,"iframe");
   var ss = "https://www.google.com/s2/favicons?domain=" + cp;
   document.getElementsByTagName("img")[0].setAttribute("src", ss);
   $.notify("Chosen Page " + cp, "success");
