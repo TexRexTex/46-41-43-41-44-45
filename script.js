@@ -1,3 +1,8 @@
+var ls = localStorage.getItem("pass");
+if (ls == null) {
+  window.location.replace("/46-41-43-41-44-45/");
+}
+
 function loadCSS() {
   var css=localStorage.getItem("css");
   if(css==null){
@@ -43,11 +48,6 @@ function delacces() {
   window.location.replace("/46-41-43-41-44-45/");
   getinclude();
 }
-var ls = localStorage.getItem("pass");
-if (ls == null) {
-  window.location.replace("/46-41-43-41-44-45/");
-}
-
 var ls = localStorage.getItem("pass");
 if (ls == "no") {
   window.location.replace("/46-41-43-41-44-45/");
